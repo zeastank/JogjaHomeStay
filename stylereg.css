@@ -2,11 +2,16 @@
 /* CSS Document */
 #header {
 	height:155px;
-	width: auto;
-	background: url(header.png) no-repeat;
-	position: relative;
-	border: 0px solid #000;
-	margin-bottom: 50px;
+	width: 100%;
+	background:no-repeat ;
+	width:100%;
+    text-align:center;
+    margin-bottom: 50px;
+}
+
+img.center {
+    display:inline-block;
+    margin: 0 auto;
 }
  #register {
         width:450px;
