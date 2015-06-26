@@ -1,4 +1,6 @@
 <?php 
+error_reporting(E_ALL ^ E_DEPRECATED);
+header('Refresh: 3;url=login_host.html');
 require("connect_db.php");
 mysql_connect("$host", "$username", "$password")or die("koneksi gagal");
 mysql_select_db("$db")or die("database tidak bisa dipilih");
@@ -17,7 +19,7 @@ function NewUser()
     } 
     else
     {
-        echo "something is not fucking right!";
+        echo "terdapat kesalahan";
     }
 } 
 
