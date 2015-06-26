@@ -23,7 +23,7 @@ $count=mysql_num_rows($result);
  
 if($count==1){
 $_SESSION['usersession']=$username;
-header('location:halamanprofil_host.php');}
+header("location:halamanprofil_host.php");}
 
 else {
 echo "Username atau Password yang anda masukkan salah";
