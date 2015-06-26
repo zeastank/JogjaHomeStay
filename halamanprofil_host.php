@@ -1,3 +1,6 @@
+<?php
+include ('session.php');
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,9 +13,9 @@
 </div>
 <nav>
 <ul>
-	<li class="active"><a href="halamanprofil_host.html">Profil</a></li>
-    <li><a href="add.html"> Add Homestay Location</a></li>
-    <li><a href="#"> Logout</a></li>
+	<li class="active"><a href="halamanprofil_host.php">Profil</a></li>
+    <li><a href="add.php"> Add Homestay Location</a></li>
+    <li><a href="logout.php"> Logout</a></li>
     </ul></nav>
   <div id="register">
 <a href="#" class=""> <img src="profil.jpg" class="img1" /> </a>
