@@ -1,4 +1,6 @@
 <?php
+session_start():
+ error_reporting(E_ALL ^ E_DEPRECATED);
 require("connect_db.php"); 
  
 mysql_connect("$host", "$username", "$password")or die("koneksi gagal");
@@ -20,8 +22,9 @@ $result=mysql_query($sql);
 $count=mysql_num_rows($result);
  
 if($count==1){
-echo "<script>window.location = '.html';</script>";
-}
+$_SESSION['usersession']=$username;
+header('location:halamanprofil_host.php');}
+
 else {
 echo "Username atau Password yang anda masukkan salah";
 }
